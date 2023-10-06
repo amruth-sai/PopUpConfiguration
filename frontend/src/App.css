@@ -1,0 +1,277 @@
+.container {
+  display: flex; /* This makes the container a flex container */
+  justify-content: space-between; /* Items are spaced evenly along the main axis */
+  align-items: center; /* Items are centered along the cross axis */
+  background-color: #f0f0f0;
+}
+.item {
+  width: 100px;
+  height: 50px;
+  color: #161616;
+  background-color:#ccc;
+  border-radius: 10% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+/* Styling for the outer container */
+.leftouter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 10px auto;
+  background-color: #f0f0f0;
+}
+
+/* Styling for the left column */
+.left {
+  flex-basis: calc(50% - 10px); /* 50% width with some spacing */
+  text-align: left;
+}
+
+/* Styling for input fields and select */
+input[type="number"],
+select {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#selectidfortime {
+  width: 100px;
+}
+select {
+  height: 30px;
+  width: 200px;
+}
+
+/* Styling for labels */
+.question {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Styling for the "seconds" and "times" labels */
+.ansinput > div:last-child {
+  display: inline;
+  margin-left: 5px;
+}
+
+/* Styling for select dropdown options */
+option {
+  font-size: 14px;
+}
+
+/* Styling for the "Other options" text */
+.ansinput > div:last-child:last-child {
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+}
+/* Styling for the right outer container */
+.rightouter {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 80vw;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/* Styling for the "Edit the flow steps" title */
+.rightouter > div {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Styling for the list of steps */
+.steps {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styling for each step */
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Styling for the select elements inside steps */
+.selectinside {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+/* Styling for the "Display" text inside steps */
+.stepInside {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Styling for the input field inside steps */
+.type {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+/* Styling for the "X" and "+" buttons inside steps */
+button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+/* Styling for the "+ Add" button */
+.steps > .step:last-child > button:last-child {
+  background-color: #3498db;
+}
+
+.steps > .step:last-child > button:last-child:hover {
+  background-color: #2980b9;
+}
+/* Styling for the card container */
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Styling for each card */
+.card {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 400px;
+}
+
+/* Styling for the top card content */
+.topcard {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Styling for the inner div */
+.card > div {
+  margin-bottom: 10px;
+}
+
+/* Styling for the "Next" button */
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+.freetext {
+  width: 300px;
+  height: 60px;
+}
+/* Styling for the parent div */
+.numberbelow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Styling for the inner divs */
+.numberbelow > div {
+  flex-grow: 1;
+  text-align: center;
+}
+.bottomcontainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_container {
+  margin-top: 20vh;
+  margin-left: 35vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 400px;
+  height: 200px;
+  
+}
+/* Define a CSS class with temporary styles */
+.temp-style {
+  display: none;
+}
+.notselected{
+  opacity: 50%;
+}
+
+/* Styling for the Link with the .anotherButton class */
+.anotherButton {
+  position: fixed;
+  top: 10vh;
+  left: 90vw;
+  padding: 10px 20px; /* Adjust padding for better button sizing */
+  background-color: #c0392b;
+  color: white; /* Set text color to contrast with background */
+  border: none; /* Remove button border if not needed */
+  border-radius: 5px; /* Add rounded corners for a nicer look */
+  cursor: pointer; /* Add a pointer cursor for better user interaction */
+  transition: background-color 0.3s; /* Add a smooth transition on hover */
+}
+
+/* Styling for the Link text */
+.anotherButton:hover {
+  background-color: #e74c3c; /* Change color on hover for user feedback */
+}
+
+/* Styling for the text-decoration on the Link */
+.anotherButton,
+.anotherButton:visited {
+  text-decoration: none; /* Remove underline from link */
+}
+
+/* Styling for the Link text color */
+.anotherButton:focus,
+.anotherButton:active {
+  color: white; /* Set the color when the link is focused or active */
+}
+
+.homeButton{
+  background-color: #2a16df8e;
+}
+.homeButton:hover {
+  background-color: #2a16df; /* Change color on hover for user feedback */
+}
